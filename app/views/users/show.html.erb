@@ -1,3 +1,9 @@
 <h3><%= @user.email %></h3>
   <p>API Key: <%= @user.api_key.access_token %></p>
   <p>What are people saying about you, <%= @user.name %>?</p>
+
+<ul>
+  <% @tweets.each do |tweet| %>
+    <li><%= tweet %></li>
+  <% end %>
+</ul>
