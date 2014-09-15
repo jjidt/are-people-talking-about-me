@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   root to: "users#index"
 
   resources :users
+
+  get '/users/api/:key', to: 'apis#show'
+
 end
